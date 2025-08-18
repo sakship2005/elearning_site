@@ -1,11 +1,165 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sakshi's E-Learning</title>
+    <title>E-Learning Platform</title>
+    <style>
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #4a90e2;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            padding: 15px 30px;
+            background: #ff6b6b;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #fff;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background: #ff4b4b;
+        }
+
+        /* Courses Section */
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            gap: 20px;
+        }
+        .course-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .course-card:hover {
+            transform: translateY(-10px);
+        }
+        .course-card h3 {
+            margin-bottom: 15px;
+            color: #4a90e2;
+        }
+        .course-card p {
+            margin-bottom: 20px;
+        }
+        .course-card button {
+            padding: 10px 20px;
+            background: #4a90e2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .course-card button:hover {
+            background: #357ab7;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .courses {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome to My E-Learning Platform</h1>
-<p>Courses: Web Development, Data Science, Cloud Computing</p>
-<p>Contact: sakshi@example.com</p>
+
+<header>
+    <h1>Welcome to E-Learning Platform</h1>
+    <nav>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Learn from the Best, Anywhere!</h2>
+    <p>Explore our courses and start your learning journey today.</p>
+    <button>Get Started</button>
+</section>
+
+<section class="courses" id="courses">
+    <div class="course-card">
+        <h3>Data Science</h3>
+        <p>Master data analysis, visualization, and predictive modeling.</p>
+        <button>Enroll Now</button>
+    </div>
+    <div class="course-card">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS, JavaScript and build modern websites.</p>
+        <button>Enroll Now</button>
+    </div>
+    <div class="course-card">
+        <h3>AI & Machine Learning</h3>
+        <p>Dive into AI algorithms, neural networks, and smart applications.</p>
+        <button>Enroll Now</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 E-Learning Platform. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
